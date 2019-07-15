@@ -50,8 +50,8 @@ def index(request):
     if not request.session.session_key: # 初始requests.post()并不会像浏览器那样生成session_key,自己生成一个session_key
         request.session.create()
 
-    name = "唐生"
-    password = "thonsun123"
+    name = "xxxx"
+    password = "xxxxx"
     if request.method=="GET":
         msg = {"status":False,"msg":"请求方法不对"}
         msg = json.dumps(msg)
